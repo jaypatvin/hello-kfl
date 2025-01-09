@@ -20,9 +20,12 @@ CREATE TABLE client_contacts (
     contact_role VARCHAR(100),
     contact_phone VARCHAR(20),
     contact_email VARCHAR(255) UNIQUE NOT NULL
+    
 );
 CREATE TABLE client_coordinators (
     client_id INT NOT NULL,
+    contact_number VARCHAR (10),
+    get_status VARCHAR(10),
     kfl_coordinator_id INT NOT NULL,
     PRIMARY KEY (client_id, kfl_coordinator_id),
     FOREIGN KEY (client_id) REFERENCES clients(client_id),
