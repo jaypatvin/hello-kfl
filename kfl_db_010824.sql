@@ -37,3 +37,7 @@ CREATE TABLE client_client_contacts (
 );
 
 
+-- Ace
+CREATE TABLE atm(
+gcash INT NOT NULL,
+);
